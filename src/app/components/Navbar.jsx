@@ -15,8 +15,8 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Links = [
   { path: "/music", label: "Music" },
-  { path: "/links", label: "Links" },
-  { path: "/link-create", label: "Create" },
+  // { path: "/links", label: "Links" },
+  // { path: "/link-create", label: "Create" },
   { path: "/contact", label: "Contact", isButton: true },
 ];
 
