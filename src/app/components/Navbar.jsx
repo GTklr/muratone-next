@@ -15,7 +15,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Links = [
   { path: "/music", label: "Music" },
-  // { path: "/links", label: "Links" },
+  { path: "/links", label: "Links" },
   // { path: "/link-create", label: "Create" },
   { path: "/contact", label: "Contact", isButton: true },
 ];
@@ -63,7 +63,9 @@ export function NavbarSimple() {
   return (
     <div className="mx-auto my-auto bg-dark text-white fixed top-0 left-0 right-0 py-0 px-5 z-20">
       <div className="flex items-center justify-between ">
-        <h2 className="mr-4 cursor-pointer py-2 text-white">Muratone</h2>
+        <Link href="/">
+          <h2 className="mr-4 cursor-pointer py-2 text-white">Muratone</h2>
+        </Link>
         <div className="hidden lg:block">
           <NavList />
         </div>

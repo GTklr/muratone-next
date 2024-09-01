@@ -33,7 +33,7 @@ const MusicPage = () => {
           <h1 className="text-4xl font-bold text-center my-4">Releases</h1>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-2">
             {spotifyLinks.map((link, index) => (
-              <div key={index} className="flex items-center justify-center ">
+              <div key={index} className="flex items-center justify-center">
                 {link ? (
                   <Spotify className="" wide link={link} />
                 ) : (
@@ -56,7 +56,7 @@ const MusicPage = () => {
         </video>
         <div className="container flex flex-col justify-center items-center min-h-screen w-full z-10 relative text-white my-10 px-5 ">
           <div className="lg:w-3/4 container px-5">
-            <h1 className="text-4xl font-bold text-center my-4">Releases</h1>
+            <h1 className="text-4xl font-bold text-center my-4">Mixes</h1>
             <Iframe
               className="rounded-lg"
               url="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fmuratone%2Fmuratone-deep-thrills-vol-1%2F"
