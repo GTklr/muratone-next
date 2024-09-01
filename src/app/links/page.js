@@ -13,7 +13,7 @@ async function LinktreePage() {
   }
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-primary p-4">
+    <div className="flex justify-center items-center min-h-svh bg-primary p-4">
       <video
         autoPlay
         loop
