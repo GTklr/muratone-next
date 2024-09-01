@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div
       id="intro"
-      className="flex items-center justify-center text-center h-screen w-screen bg-cover bg-center"
+      className="flex items-center justify-center text-center h-svh w-screen bg-cover bg-center"
       style={{
         backgroundImage: "url('/ITS1.jpg')",
         boxShadow: "inset 0 0 0 2000px rgba(0, 0, 0, 0.678)",
