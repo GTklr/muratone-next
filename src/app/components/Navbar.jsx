@@ -10,6 +10,8 @@ import {
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Links = [
   { path: "/music", label: "Music" },
@@ -59,16 +61,15 @@ export function NavbarSimple() {
   }, []);
 
   return (
-    <div className="mx-auto my-auto bg-dark text-white fixed top-0 left-0 right-0 py-0 px-5">
-      <div className="flex items-center justify-between text-blue-gray-900 py-0 border-none">
-        <h2 className="mr-4 cursor-pointer py-1.5 text-white">Muratone</h2>
+    <div className="mx-auto my-auto bg-dark text-white fixed top-0 left-0 right-0 py-0 px-5 z-20">
+      <div className="flex items-center justify-between ">
+        <h2 className="mr-4 cursor-pointer py-2 text-white">Muratone</h2>
         <div className="hidden lg:block">
           <NavList />
         </div>
-        <IconButton
-          variant="text"
-          className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
-          ripple={false}
+        <FontAwesomeIcon
+          icon={faBars}
+          className=" h-6 w-6 text-white lg:hidden"
           onClick={() => setOpenNav(!openNav)}
         >
           {openNav ? (
@@ -76,7 +77,7 @@ export function NavbarSimple() {
           ) : (
             <Bars3Icon className="h-6 w-6" strokeWidth={2} />
           )}
-        </IconButton>
+        </FontAwesomeIcon>
       </div>
       <MobileNav open={openNav} className="bg-opacity-25">
         <NavList className="px-10" />

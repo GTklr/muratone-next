@@ -23,7 +23,7 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-dark text-white fixed bottom-0 left-0 right-0 py-2 px-5">
+    <footer className="bg-dark text-white fixed bottom-0 left-0 right-0 py-2 px-5 z-20">
       <div className="container mx-auto flex justify-between items-center">
         <div className="w-full flex items-center">
           <p className="text-xs">© 2024 Muratone | </p>
