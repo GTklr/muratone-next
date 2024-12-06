@@ -14,14 +14,10 @@ async function LinktreePage() {
 
   return (
     <div className="flex justify-center items-center min-h-svh bg-primary p-4">
-      <video
-        autoPlay
-        loop
-        muted
-        className="z-0 w-full h-full object-cover absolute top-0 left-0"
-      >
-        <source src="/hero12.webm" type="video/webm" />
-      </video>
+      <img
+        src="/muratonebg2.jpg"
+        className="absolute w-full h-full object-cover"
+      ></img>
 
       <div className="max-w-screen-lg w-full border border-secondary rounded-lg p-6 z-10 bg-dark bg-opacity-30">
         <h1 className="text-3xl font-bold mb-6 text-white text-center">
